@@ -1,0 +1,478 @@
+@font-face {
+    font-family: Linux_Libertine;
+    src: url(LinLibertine_R.ttf)
+}
+
+html body {
+    font-size: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f6f6f6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #0645ad;
+    background: none;
+}
+
+a:visited {
+    color: #0b0080;
+}
+
+h1 {
+    font-family: Linux_Libertine;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: Linux_Libertine;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    font-size: 170%;
+}
+
+body span {
+    margin: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 176px auto;
+}
+
+.wrapperright {
+    display: grid;
+    grid-template-rows: 40px 40px;
+}
+
+.wrappern .navigation {
+    display: grid;
+}
+
+#artikel a{
+    background-image: none;
+}
+
+.navigationright {
+    float: right;
+}
+
+.navigation a {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient( to top, #a7d7f9, rgba(255, 255, 255, 0)) 1 100%;
+    border-image-outset: 7 1 1 0 ;
+    padding: 10px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 16px;
+    background-image: linear-gradient(to top, #a7d7f94b 0%, rgb(255, 255, 255) 100%);
+    border-top: none; 
+}
+
+.topbar {
+    position: relative;
+    margin-right: 16px;
+    margin-bottom: 3px;
+}
+
+.topbar ul {
+    float: right;
+    margin-left: 0.75em;
+    font-size: 0.75em;
+    padding-left: 0px;
+    padding-top: 2px;
+    margin-top: 9px;
+}
+
+.topbar #nicht-angemeldet {
+    background-image: url("user-avatar.png");
+    background-position: left 0px;
+    background-repeat: no-repeat;
+    background-size: 1.16666667em 1.16666667em;
+    padding-left: 16px;
+    color: #54595d;
+}
+
+.wrapper .main {
+    border: 1px solid #a7d7f9;
+}
+
+.wrapper .side {
+    padding-left: 19.2px;
+    padding-right: 8px;
+}
+
+.wrapper #logo img {
+    width: -webkit-fill-available;
+    display: block;
+    text-decoration: none;
+    width: 91%;
+    padding-top: 2px;
+    padding-left: 1px;
+}
+
+.wrapper .side ul {
+    font-size: 0.75em;
+    line-height: 1.2em;
+    padding-left: 8px;
+    margin: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.wrapper .erster-absatz {
+    margin-top: 27px;
+}
+
+.wrapper .unterer-teil {
+    background-image: url(portal-break.png);
+    background-repeat: no-repeat;
+    padding-top: 3px;
+}
+
+.wrapper h3 {
+    color: #444444;
+    font-weight: normal;
+    font-size: 0.75em;
+    padding-left: 8px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.wrapper .navigation ul {
+    float: left;
+    list-style-type: none;
+    padding-top: 1.45em;
+    margin: 0px;
+    line-height: 1.125em;
+    cursor: pointer;
+    font-size: 0.8125em;
+    background-image: url(tab-normal-fade.png);
+}
+
+.wrapper .suchzeile {
+    max-width: 318px;
+    width: 256px;
+}
+
+.wrapper #suche {
+    background-image: url(search.png);
+    background-repeat: no-repeat;
+    background-position: center right 6px;
+    width: 100%;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    padding: 0.4em 1.818em 0.4em 0.4em;
+    margin-bottom: 3px;
+}
+
+.wrapper ul.suchzeile {
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+.main {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    background-color: white;
+}
+
+/* ################################# Main Content ######################################################################################## */
+
+.main-content-top {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px auto;
+    line-height: 1.6;
+}
+
+/* - beginnt bei row line 2 und column line 1,
+- überspannt 2 rows und überspannt 3 columns */
+
+.item1 {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.item2 {
+    grid-area: 1 / 3 / span 2;
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    margin-top: 15px;
+    background-color: #f8f9fa;
+    height: 274px;
+}
+
+.item2 img {
+    width: 222px;
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    background-color: #f8f9fa;
+}
+
+.item2 p {
+    text-align: left;
+    border: 0;
+    padding: 3px;
+    margin-top: 0px;
+    font-size: 91%;
+}
+
+.item2 #bild {
+    height: 230px;
+}
+
+.item2 #bildtext {
+    width: 230px;
+}
+
+.main {
+    line-height: 1.6;
+    font-size: 0.875em;
+    margin-top: 0px;
+}
+
+.main p {
+    margin-top: 0px;
+}
+
+.item1 span {
+    font-weight: bold;
+}
+
+.item2 #bildchen {
+    float: right;
+    border: none;
+    width: 15px;
+    height: 11px;
+}
+
+.item2 #bildtext p {
+    margin-bottom: 0px;
+}
+
+.item3 {
+    grid-area: 2 / 1 / span 1 / span 1;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 7px;
+    height: 140px;
+    margin-bottom: 30px;
+}
+
+.item3 ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+    margin: 0.3em 0;
+    line-height: 1.6;
+}
+
+.item3 h4 {
+    float: left;
+    margin: 0px;
+    font-size: 100%;
+}
+
+.item3 .tocnr {
+    padding-right: 0.5em;
+    color: #222;
+}
+
+.item3 a {
+    text-align: right;
+    padding-left: 5px;
+    font-size: 94%;
+}
+
+.item3 span {
+    color: #0645ad;
+}
+
+.main .bearbeiten-span {
+    font-size: small;
+    font-weight: normal;
+    margin-left: 1em;
+    vertical-align: baseline;
+    line-height: 1em;
+    font-family: sans-serif;
+}
+
+h2 .a-color {
+    color: #0645ad;
+}
+
+h2 {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.section2 .Gänsefüßchen {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 7px;
+}
+
+#h2-section3 {
+    width: 100%;
+}
+
+#eingerückt-section2 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#liste-section3 {
+    margin: 0.3em 0 0 1.6em;
+}
+
+#img2-section3 {
+    width: 12px;
+    height: 16px;
+}
+
+#mediauntertitel {
+    margin-bottom: 5px;
+}
+
+#mediauntertitel .bearbeiten-span {
+    margin-left: 0px;
+}
+
+#media {
+    min-width: 309px;
+    width: 31%;
+    padding-top: 7px;
+    padding-left: 7px;
+    border: 1px solid #a2a9b1;
+}
+
+#kategorien {
+    border: 1px solid #a2a9b1;
+    margin-top: 14px;
+    padding: 5px;
+}
+
+.footer_info {
+    line-height: 1.4em;
+    font-size: 0.7em;
+    list-style: none;
+}
+
+.zeilen {
+    padding-bottom: 11px
+}
+
+.footer {
+    padding: 20px;
+}
+
+.footer ul {
+    margin-top: 5px;
+}
+
+#footer_info li {
+    display: inline;
+    margin-right: 11.200px;
+}
+
+#footerbuttons a {
+    float: right;
+    padding-right: 5px;
+}
+
+#h2-section2 {
+    margin-top: 0px;
+    width: 75%;
+}
+#gesprochenbutton img{
+    float: right;
+    width: 15px;
+    height: 15px;
+    padding-top: 10px;
+}
+#InhaltsverzeichnisF:not(:target) .inhalt {
+    display: none;
+}
+
+#InhaltsverzeichnisF:target .inhalt {
+    display: block;
+}
+
+#InhaltsverzeichnisF:target .show {
+    display: none;
+
+}
+
+#InhaltsverzeichnisF:not(:target) .hide {
+    display: none;
+}
+
+#InhaltsverzeichnisF:not(:target) {
+    height: 10%;
+}
+
+#InhaltsverzeichnisF {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 2px;
+    line-height: 1.7em;
+    /* width: 280px; */
+    font-size: 13px;
+    text-align: left;
+    padding: 7px;
+    overflow: hidden;
+    height: 80%;
+}
+
+#InhaltsverzeichnisF ul {
+    list-style: none;
+}
+
+#ihv_head {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#ihv_head span {
+    text-decoration: none;
+    color: #222;
+}
+
+#ihv_head li {
+    display: inline;
+}
+
+#ihv_überschrift {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-size: 1em;
+}
+
+#lesen a{
+    background-image: none;
+}
